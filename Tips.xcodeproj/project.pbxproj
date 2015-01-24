@@ -14,6 +14,8 @@
 		8AB3666C1A72EDE700B3F327 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB3666B1A72EDE700B3F327 /* Images.xcassets */; };
 		8AB3666F1A72EDE700B3F327 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB3666D1A72EDE700B3F327 /* LaunchScreen.xib */; };
 		8AB3667B1A72EDE700B3F327 /* TipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB3667A1A72EDE700B3F327 /* TipsTests.m */; };
+		8AB366861A72F4B900B3F327 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB366851A72F4B900B3F327 /* Calculator.m */; };
+		8AB366891A7319F200B3F327 /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB366881A7319F200B3F327 /* Time.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		8AB366741A72EDE700B3F327 /* TipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB366791A72EDE700B3F327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB3667A1A72EDE700B3F327 /* TipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsTests.m; sourceTree = "<group>"; };
+		8AB366841A72F4B900B3F327 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		8AB366851A72F4B900B3F327 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		8AB366871A7319F200B3F327 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Time.h; path = ../Time.h; sourceTree = "<group>"; };
+		8AB366881A7319F200B3F327 /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Time.m; path = ../Time.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,13 @@
 		8AB3665D1A72EDE700B3F327 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
-				8AB366621A72EDE700B3F327 /* AppDelegate.h */,
-				8AB366631A72EDE700B3F327 /* AppDelegate.m */,
-				8AB366651A72EDE700B3F327 /* ViewController.h */,
+				8AB366871A7319F200B3F327 /* Time.h */,
+				8AB366881A7319F200B3F327 /* Time.m */,
+				8AB366841A72F4B900B3F327 /* Calculator.h */,
+				8AB366851A72F4B900B3F327 /* Calculator.m */,
 				8AB366661A72EDE700B3F327 /* ViewController.m */,
 				8AB366681A72EDE700B3F327 /* Main.storyboard */,
 				8AB3666B1A72EDE700B3F327 /* Images.xcassets */,
-				8AB3666D1A72EDE700B3F327 /* LaunchScreen.xib */,
 				8AB3665E1A72EDE700B3F327 /* Supporting Files */,
 			);
 			path = Tips;
@@ -96,6 +102,10 @@
 		8AB3665E1A72EDE700B3F327 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8AB366651A72EDE700B3F327 /* ViewController.h */,
+				8AB3666D1A72EDE700B3F327 /* LaunchScreen.xib */,
+				8AB366621A72EDE700B3F327 /* AppDelegate.h */,
+				8AB366631A72EDE700B3F327 /* AppDelegate.m */,
 				8AB3665F1A72EDE700B3F327 /* Info.plist */,
 				8AB366601A72EDE700B3F327 /* main.m */,
 			);
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB366891A7319F200B3F327 /* Time.m in Sources */,
 				8AB366671A72EDE700B3F327 /* ViewController.m in Sources */,
+				8AB366861A72F4B900B3F327 /* Calculator.m in Sources */,
 				8AB366641A72EDE700B3F327 /* AppDelegate.m in Sources */,
 				8AB366611A72EDE700B3F327 /* main.m in Sources */,
 			);
@@ -344,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
